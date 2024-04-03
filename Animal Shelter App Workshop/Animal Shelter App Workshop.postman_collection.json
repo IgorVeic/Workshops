@@ -24,18 +24,6 @@
 							"path": [
 								"api",
 								"animals"
-							],
-							"query": [
-								{
-									"key": "name",
-									"value": "Buddy",
-									"disabled": true
-								},
-								{
-									"key": "age",
-									"value": "2",
-									"disabled": true
-								}
 							]
 						}
 					},
@@ -69,7 +57,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Rex\",\r\n    \"type\": \"Dog\",\r\n    \"breed\": \"German Sheppard\",\r\n    \"age\": 5,\r\n    \"status\": \"Available\",\r\n    \"description\": \"Cute German Sheppard!\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Dylan\",\r\n    \"type\": \"Dog\",\r\n    \"breed\": \"Retriever\",\r\n    \"age\": 6,\r\n    \"status\": \"Adopted\",\r\n    \"description\": \"Hello Dylan!\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -98,7 +86,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Bambozo\",\r\n    \"type\": \"Dog\",\r\n    \"breed\": \"German Sheppard\",\r\n    \"age\": 5,\r\n    \"status\": \"Available\",\r\n    \"description\": \"Cute German Sheppard!\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Bambozo\",\r\n    \"type\": \"Dog\",\r\n    \"breed\": \"German Sheppard\",\r\n    \"age\": 5,\r\n    \"status\": \"Adopted\",\r\n    \"description\": \"Cute German Sheppard!\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -106,7 +94,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/api/animals/660d87c8f077825227e2bf3e",
+							"raw": "http://localhost:3000/api/animals/660d9fe093ed036bef87b506",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -115,7 +103,7 @@
 							"path": [
 								"api",
 								"animals",
-								"660d87c8f077825227e2bf3e"
+								"660d9fe093ed036bef87b506"
 							]
 						}
 					},
@@ -162,7 +150,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/api/adoptions",
+							"raw": "http://localhost:3000/api/adoptions/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -170,7 +158,8 @@
 							"port": "3000",
 							"path": [
 								"api",
-								"adoptions"
+								"adoptions",
+								""
 							]
 						}
 					},
@@ -183,7 +172,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\t\"adopterName\": \"John Doe\",\r\n\t\t\"email\": \"johndoe@example.com\",\r\n        \"animal\":\"660d9aa95c11cf8de4b6c092\",\r\n        \"adoptionDate\": \"2021-01-01\"\r\n}",
+							"raw": "{\r\n\t\t\"adopterName\": \"Mike Tyson\",\r\n\t\t\"email\": \"ironmike@example.com\",\r\n        \"animal\":\"660da1b75cc04df0bc5f2c92\",\r\n        \"adoptionDate\": \"2022-06-03\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -200,6 +189,36 @@
 							"path": [
 								"api",
 								"adoptions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Adoption",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"adopterName\": \"Mike Tyson\",\r\n\t\t\"email\": \"ironmike@example.com\",\r\n        \"animal\":\"660da1b75cc04df0bc5f2c92\",\r\n        \"adoptionDate\": \"2022-06-03\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/adoptions/660d9ecd93ed036bef87b4f5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"adoptions",
+								"660d9ecd93ed036bef87b4f5"
 							]
 						}
 					},
